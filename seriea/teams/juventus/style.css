@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body{
+    background-color: #595182;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100px;
+}
+.logo-site{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    background-color: #d87093;
+    margin-left: 20px;
+    border: solid 0px palevioletred;
+    border-radius: 100%;
+    object-fit: contain;
+    overflow: hidden;
+}
+.logo-site img{
+    object-fit: contain;
+    overflow: hidden;
+}
+.title{
+    color: #ffffff;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.main-page{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.team-header{
+    padding: 5px;
+    margin-top: 50px;
+    background-color: #70689d;
+    width: 80%;
+    border-radius: 20px;
+    display: flex;
+
+}
+.team-header img{
+    height: 120px;
+    width: 120px;
+}
+.team-header-info{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    color: #ffffff;
+}
+.team-header-country{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+.team-header-country img{
+    margin: 7px;
+    height: 30px;
+    width: 30px;
+}
+.team-descr{
+    color: #ffffff;
+    margin-top: 20px;
+    margin-left: 80px;
+    width: 45%;
+}
+.team-info{
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    margin-left: 80px;
+    margin-top: 30px;
+}
+a{
+    font-style: normal;
+    text-decoration-line: none;
+    color: #ffffff;
+}
+.squad-list{
+    padding: 10px;
+    margin-top: 50px;
+    background-color: #70689d;
+    width: 80%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.squad-member{
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    padding: 10px;
+    width: 98%;
+    border-bottom: solid 2px #595182;
+    border-radius: 2px;
+}
+.squad-member img{
+    height: 70px;
+    width: 70px;
+    border: solid 3px white;
+    border-radius: 100%;
+}
+.squad-member-left{
+    display: flex;
+    flex-direction: row;
+}
+.squad-member-left-info{
+    margin-left: 20px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.squad-member-left-info #name{
+    font-size: 20px;
+    font-weight: 700;
+}
+.squad-member-left-info #role{
+    font-size: 18px;
+    margin-top: 5px;
+}
+.squad-member-right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 20px;
+}
+.squad-member-right #jersey-number{
+    font-size: 25px;
+    font-weight: 700;
+    margin-right: 20px;
+}
+.squad-member-right img{
+    height: 50px;
+    width: 50px;
+}
+
+@media (max-width: 850px){
+    .team-header{
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .team-header-info{
+        align-items: center;
+    }
+    .team-descr{
+        width: 90%;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    .team-info{
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+}
+@media (max-width: 400px) {
+    .team-header{
+        width: 90%;
+    }
+    .squad-list{
+        width: 90%;
+    }
+    .squad-member-left img{
+        width: 50px;
+        height: 50px;
+    }
+    .squad-member-left-info #name{
+        font-size: 15px;
+        text-wrap: wrap;
+        margin-left: 10px;
+    }
+    .squad-member-left-info #role{
+        font-size: 15px;
+        margin-left: 10px;
+    }
+    .squad-member-left-info{
+        margin-left: 5px;
+    }
+    .squad-member-right{
+        padding: 0px;
+    }
+    .squad-member-right img{
+        width: 20px;
+        height: 20px;
+    }
+    .squad-member-right #jersey-number{
+        font-size: 15px;
+        margin-right: 15px;
+    }
+}
