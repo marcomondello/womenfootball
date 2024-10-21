@@ -24,6 +24,9 @@ header{
     background-color: var(--white-color);
     border-bottom: 0px solid var(--first-color);
 }
+header a{
+    color: var(--first-color);
+}
 .logo-site{
     display: flex;
     justify-content: center;
